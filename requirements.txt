@@ -1,0 +1,30 @@
+# 1. The Core Framework
+Flask==3.0.0
+# Used in app.py to run the server
+
+# 2. Database & ORM
+Flask-SQLAlchemy==3.1.1
+# Used in models.py to define User/Exam tables
+SQLAlchemy==2.0.23
+# The core logic behind Flask-SQLAlchemy
+
+psycopg2-binary==2.9.9
+# The driver required for PostgreSQL connection (config.py)
+
+# 3. Security & Networking
+Flask-CORS==4.0.0
+# Used in app.py to allow React (Port 5173) to talk to Flask (Port 5000)
+
+Werkzeug==3.0.1
+# Used in models.py for generate_password_hash & check_password_hash
+
+# 4. AI & Computer Vision
+opencv-python==4.8.1.78
+# Used in camera.py (import cv2) for face detection
+
+numpy==1.26.2
+# Required by OpenCV to handle image arrays (matrices)
+
+# 5. Utilities
+python-dateutil==2.8.2
+# Often used implicitly by Flask/SQLAlchemy for datetime handling
